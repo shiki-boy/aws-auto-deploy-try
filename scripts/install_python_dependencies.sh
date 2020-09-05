@@ -1,4 +1,4 @@
 #! /bin/bash
-cd ~/code/aws-auto-deploy-try
-source ~/code/aws-auto-deploy-try-env/bin/activate
-pip install -r requirements.txt
+cd /home/ubuntu/code/aws-auto-deploy-try
+source /home/ubuntu/code/aws-auto-deploy-try-env/bin/activate
+pip3 install -r requirements.txt
