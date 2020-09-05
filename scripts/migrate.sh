@@ -1,3 +1,3 @@
 #!/bin/bash
 cd /home/ubuntu/code/aws-auto-deploy-try
-python manage.py migrate
+python3 manage.py migrate
