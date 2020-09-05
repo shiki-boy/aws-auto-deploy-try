@@ -8,7 +8,6 @@ hooks:
         runas: root
       - location: scripts/migrate.sh
         runas: root
-        runas: root
     ApplicationStart:
       - location: scripts/start_application.sh
         runas: root
