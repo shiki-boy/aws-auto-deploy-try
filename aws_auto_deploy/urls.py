@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-#change 6
+#change 7
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
