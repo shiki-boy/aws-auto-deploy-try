@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo "Before running tests"
+      - apt-get update && apt-get --assume-yes upgrade
+      - apt-get --assume-yes install libpq-dev python3 python3-dev postgresql postgresql-client emacs25-nox python3-pip nginx supervisor python3-venv git-core redis-server
+      - python manage.py migrate
+  build:
+    commands:
+      - echo "Running all unit tests"
+      - python manage.py test
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - '**/*'
