@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 # Create your views here.
 def test_view(request,*args, **kwargs):
-    return HttpResponse("<h1 style='text-align:center'>Tamana</h1>")
+    return HttpResponse("<h1 style='text-align:center'>Hello World</h1>")
