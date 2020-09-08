@@ -15,8 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from animal.views import test_view
 #change 8
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('hello/', test_view, name="home"),
 ]
